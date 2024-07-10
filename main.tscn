@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://b0u3qpirhwsjx"]
+[gd_scene load_steps=8 format=3 uid="uid://b0u3qpirhwsjx"]
 
 [ext_resource type="Texture2D" uid="uid://b1wuieuls072m" path="res://Green.png" id="1_oj1fq"]
 [ext_resource type="Texture2D" uid="uid://bp37mu2aln5s4" path="res://Terrain (16x16).png" id="2_bwb1b"]
 [ext_resource type="PackedScene" uid="uid://cdoauab6wnman" path="res://scenes/main_character.tscn" id="3_11ukg"]
-[ext_resource type="Texture2D" uid="uid://bq6kg8oin3m37" path="res://Cherries.png" id="4_whn1k"]
+[ext_resource type="PackedScene" uid="uid://66revlmijfmp" path="res://scenes/collectible.tscn" id="4_mta7j"]
+[ext_resource type="PackedScene" uid="uid://66revlmijfmp" path="res://scenes/collectible.tscn" id="5_ojfuo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o57eb"]
 texture = ExtResource("2_bwb1b")
@@ -459,133 +460,6 @@ texture = ExtResource("2_bwb1b")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_o57eb")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qt8u2"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ak2kk"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0pcnj"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_87qu6"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1oici"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n6soa"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5r7t5"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4j18b"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n563d"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_huwsr"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ncgro"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(320, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mertn"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(352, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6wwu8"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(384, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gdi6y"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(416, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ehj1y"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(448, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mkcot"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(480, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qdop2"]
-atlas = ExtResource("4_whn1k")
-region = Rect2(512, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_picrb"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qt8u2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ak2kk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0pcnj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_87qu6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1oici")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n6soa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5r7t5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4j18b")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n563d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_huwsr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ncgro")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mertn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6wwu8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gdi6y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehj1y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mkcot")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qdop2")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -616,8 +490,7 @@ position = Vector2(-4, 20)
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(183, 535)
+[node name="Collectibles" parent="." instance=ExtResource("4_mta7j")]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
-sprite_frames = SubResource("SpriteFrames_picrb")
+[node name="Collectible" parent="." instance=ExtResource("5_ojfuo")]
+position = Vector2(119, 29)
